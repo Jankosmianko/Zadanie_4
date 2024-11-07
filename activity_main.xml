@@ -1,0 +1,138 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5dc"
+    android:orientation="vertical"
+    android:padding="14dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A52A2A"
+        android:gravity="center"
+        android:padding="14dp"
+        android:text="Gra w kości Autor: Jan Wytrykus"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#A48989"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="14dp"
+        android:background="@color/black"
+        android:onClick="rollDice"
+        android:text="RZUĆ KOŚCIAMI"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Result1"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="9dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/white"
+            android:text="?"
+            android:textSize="40dp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/Result2"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="9dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/white"
+            android:text="?"
+            android:textSize="40dp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/Result3"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="9dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/white"
+            android:text="?"
+            android:textSize="40dp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/Result4"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="9dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/white"
+            android:text="?"
+            android:textSize="40dp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/Result5"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="9dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/white"
+            android:text="?"
+            android:textSize="40dp"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/los"
+        android:layout_width="381dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginTop="10dp"
+        android:text="Wynik tego losowania: " />
+
+    <TextView
+        android:id="@+id/gameresult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginTop="10dp"
+        android:text="Wynik Gry: " />
+
+    <TextView
+        android:id="@+id/numthrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginTop="10dp"
+        android:text="Liczba rzutów: " />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="14dp"
+        android:background="@color/black"
+        android:text="Zresetuj Wynik"
+        android:textAlignment="center" />
+
+
+</LinearLayout>
